@@ -1,0 +1,155 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 700px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Text and description */
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input field */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  flex: 1; /* Allow input to grow */
+  outline: none;
+}
+
+/* Label styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Range sliders */
+input[type="range"] {
+  width: 100%;
+  appearance: none; /* Remove default styles */
+  background: #b8b8b8;
+  border-radius: 4px;
+  height: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb styles */
+  appearance: none; /* Override for Firefox */
+  background: #333;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Value display for sliders */
+.rate-value,
+.pitch-value {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Dropdown menu */
+select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+.speak-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.speak-btn:hover {
+  background-color: #252525;
+}
+
+/* Optional Font Awesome icons */
+.fas {
+  color: black;
+  margin-left: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .rate-value,
+  .pitch-value {
+    font-size: 12px;
+  }
+
+  select {
+    font-size: 14px;
+  }
+
+  .speak-btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
